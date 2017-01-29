@@ -4,4 +4,4 @@ open Xamarin.Forms
 open FormsFSharpSample.UI
 
 type App() = 
-    inherit Application(MainPage = MainPage())
+    inherit Application(MainPage = MainPage(BindingContext = MainViewModel()))

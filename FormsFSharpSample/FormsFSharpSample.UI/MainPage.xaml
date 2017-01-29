@@ -2,5 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FormsFSharpSample.UI.MainPage">
-  <Label Text="Hello FormsFSharpSample" VerticalOptions="Center" HorizontalOptions="Center" />
+  <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+    <Label Text="{Binding SampleText}"/>
+    <Label Text="{Binding CountText}"/>
+    <Button Text="Tap to increase the count" Command="{Binding Increment}"/>
+  </StackLayout>
+  
 </ContentPage>
